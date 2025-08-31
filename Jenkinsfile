@@ -7,12 +7,6 @@ pipeline {
 	}
 	
 	stages {
-		stage('Checkout') {
-			steps {
-				get 'https://github.com/shrijanabudhathoki/testapp.git'
-			}
-		}
-		
 		stage('Build Docker image'){
 			steps {
 				sh '''
